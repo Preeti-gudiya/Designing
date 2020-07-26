@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>star</title>
+      <script>
+          function draw()
+          {
+         var canvas = document.getElementById('can');
+         var ctx = canvas.getContext('2d');
+         ctx.fillStyle = "yellow";
+         ctx.beginPath();
+         ctx.moveTo(108, 0);
+         ctx.lineTo(141, 70);
+         ctx.lineTo(218, 78);
+         ctx.lineTo(162, 131);
+         ctx.lineTo(175, 205);
+         ctx.lineTo(108, 170);
+         ctx.lineTo(41, 205);
+         ctx.lineTo(55, 131);
+         ctx.lineTo(1, 78);
+         ctx.lineTo(75, 68);
+         ctx.lineTo(108, 0);
+         ctx.closePath();
+         ctx.fill();
+         //cxt.shadowBlur= 5;
+         //ctx.shadowColor= "black";
+         ctx.beginPath();
+         ctx.fillStyle= "green";
+         ctx.arc(90,85,5,0,Math.PI*2,false);
+         ctx.fill();
+         ctx.closePath();
+         ctx.stroke();
+
+         ctx.beginPath();
+         ctx.arc(140,85,5,0,Math.PI*2,false);
+         ctx.fill();
+         ctx.closePath();
+         ctx.stroke();
+
+         ctx.beginPath();
+         ctx.arc(110,110,30,0,Math.PI,false);
+         //ctx.closePath();
+         ctx.stroke();
+          }
+      </script>
+</head>
+   <body onload="draw()">
+    <center>
+     <canvas width="500" height="500" id="can" style="background-color: blue;">ur browser doesnt support canvas</canvas></center>
+    </body>
+</html>
